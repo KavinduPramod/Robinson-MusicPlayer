@@ -1,16 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.robinson_music_player.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<AnchorPane id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="139.0" prefWidth="687.0" style="-fx-background-color: #222222;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.robinson_music_player.HelloController">
+   <ProgressBar id="songProgressBar" fx:id="songProgressBar" layoutY="35.0" prefHeight="20.0" prefWidth="687.0" progress="0.0">
+      <cursor>
+         <Cursor fx:constant="NONE" />
+      </cursor></ProgressBar>
+   <Button id="playButton" fx:id="playButton" accessibleText="play" defaultButton="true" layoutX="21.0" layoutY="77.0" mnemonicParsing="false" onAction="#playMedia" prefHeight="29.0" prefWidth="60.0" text="PLAY">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <font>
+         <Font name="Times New Roman" size="12.0" />
+      </font>
+   </Button>
+   <Button fx:id="pauseButton" accessibleText="play" defaultButton="true" layoutX="88.0" layoutY="77.0" mnemonicParsing="false" onAction="#pauseMedia" prefHeight="29.0" prefWidth="60.0" text="PAUSE">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+   <Button fx:id="resetButton" accessibleText="play" defaultButton="true" layoutX="156.0" layoutY="77.0" mnemonicParsing="false" onAction="#resetMedia" prefHeight="29.0" prefWidth="60.0" text="RESET">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+   <Button fx:id="previousButton" accessibleText="play" defaultButton="true" layoutX="223.0" layoutY="77.0" mnemonicParsing="false" onAction="#previousMedia" prefHeight="30.0" prefWidth="81.0" text="PREVIOUS">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+   <Button fx:id="nextButton" accessibleText="play" defaultButton="true" layoutX="312.0" layoutY="77.0" mnemonicParsing="false" onAction="#nextMedia" prefHeight="30.0" prefWidth="60.0" text="NEXT">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+   <ComboBox id="speedBox" fx:id="speedBox" layoutX="384.0" layoutY="79.0" onAction="#changeSpeed" prefWidth="150.0" promptText="SPEED">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </ComboBox>
+   <Slider id="volumeSlider" fx:id="volumeSlider" layoutX="544.0" layoutY="81.0" max="100.0" value="50.0">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Slider>
+   <Label fx:id="songlabel" alignment="CENTER" layoutX="35.0" layoutY="-2.0" prefHeight="35.0" prefWidth="614.0" text="Title" textAlignment="CENTER" textFill="#07eb39">
+      <font>
+         <Font name="Baskerville Old Face" size="18.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="DEFAULT" />
+      </cursor>
+   </Label>
+</AnchorPane>
