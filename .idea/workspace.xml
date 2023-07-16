@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="586b1b08-90b9-476e-9269-84c92bae4e94" name="Changes" comment="Completed implementation" />
+    <list default="true" id="586b1b08-90b9-476e-9269-84c92bae4e94" name="Changes" comment="Completed implementation">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/robinson_music_player/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/robinson_music_player/HelloController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +26,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2ScoTqpEiINu183ukbN2SD4MyAQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -39,6 +45,7 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Program Files/javafx-sdk-20.0.1",
@@ -56,6 +63,7 @@
       <recent name="C:\Users\kavin\Desktop\Music_player\RobinsoN Music Player\src\main\resources\com\example\robinson_music_player" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kavin\Desktop\Music_player\RobinsoN Music Player\music" />
       <recent name="C:\Users\kavin\Desktop\Music_player\RobinsoN Music Player" />
     </key>
   </component>
@@ -115,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689479686038</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Completed implementation">
+      <created>1689480193525</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1689480193525</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

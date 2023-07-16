@@ -146,17 +146,17 @@ public class HelloController implements Initializable {
         task = new TimerTask() {
             @Override
             public void run() {
-                    running = true;
-                    double current =mediaPlayer.getCurrentTime().toSeconds();
-                    double end = media.getDuration().toSeconds();
-                    songProgressBar.setProgress(current/end);
+                running = true;
+                double current =mediaPlayer.getCurrentTime().toSeconds();
+                double end = media.getDuration().toSeconds();
+                songProgressBar.setProgress(current/end);
 
-                    if (current/end == 1){
-                        cancelTimer();
-                    }
+                if (current/end == 1){
+                    cancelTimer();
                 }
-            };
-            timer.scheduleAtFixedRate(task, 0,1000);
+            }
+        };
+        timer.scheduleAtFixedRate(task, 0,1000);
     }
     public void cancelTimer(){
         running = false;
